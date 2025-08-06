@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather Site</title>
+  </head>
+  <body>
+    <h1>Current Weather</h1>
+    <h2>Weather Report</h2>
+    <report class="report">
+      <nav>
+        <ul>
+          <li>Currently: <span id="current-temp">87</span>°F</li>
+          <li>Stongest Wind/City:<span id="Windiest_Cities"> Tooele</span></li>
+          <li>SLC Temp: <span id="SLC_Temp">91</span>°F</li>
+          <li>Europe's Temp: <span id="Eu_Temp">119.8</span>°F</li>
+        </ul>
+      </nav>
+      <div>
+        <img
+          src="https://purple-cdn.web-apps-prod.wo-cloud.com/purple/0f7a645f-e3c1-4a9c-a6dd-ccfa5dff68a7/ccaeda65-166e-49c6-bbcd-ece973f0339c/aeb7a8d8-ffed-4b2f-94fa-bcf4a957e9e3/b847ad62-de5a-44b0-9de8-dc6ac0773bdf.jpg"
+          style="width: 380px; height: 250px"
+          alt="Eu_Pic"
+        />
+      </div>
+    </report>
+
+    <!-- My 5 Day Forecast -->
+    <main class="five_day_report">
+      <report id="forecast_container">
+        <h2 id="forecast-title">5 Days Forecast</h2>
+        <h3 id="current_city">Tooele</h3>
+
+        <div class="flex-col">
+          <span id="dayTitle1" class="col-head">Monday</span>
+          <img
+            src="thunderStorms.jpg"
+            style="width: 150px; height: 150px"
+            id="weatherIcon1"
+            class="weatherIcon"
+          />
+          <span class="temp-data">
+            <span id="data1">88</span> <span>°F</span>
+          </span>
+        </div>
+
+        <div class="flex-col">
+          <span id="dayTitle2" class="col-head">Tuesday</span>
+          <img
+            src="Sunny.jpg"
+            style="width: 150px; height: 150px"
+            id="weatherIcon2"
+            class="weatherIcon"
+          />
+          <span class="temp-data">
+            <span id="data2"></span>94<span>°F</span>
+          </span>
+        </div>
+
+        <div class="flex-col">
+          <span id="dayTitle3" class="col-head">Wednesday</span>
+          <img
+            src="partlyCloudy.jpg"
+            style="width: 150px; height: 150px"
+            id="weatherIcon3"
+            class="weatherIcon"
+          />
+          <span class="temp-data">
+            <span id="data3"></span>94<span>°F</span>
+          </span>
+        </div>
+
+        <div class="flex-col">
+          <span id="dayTitle4" class="col-head">Thursday</span>
+          <img
+            src="Umbrella.jpg"
+            style="width: 150px; height: 150px"
+            id="weatherIcon4"
+            class="weatherIcon"
+          />
+          <span class="temp-data">
+            <span id="data4"></span>91<span>°F</span>
+          </span>
+        </div>
+
+        <div class="flex-col">
+          <span id="dayTitle5" class="col-head">Friday</span>
+          <img
+            src="Windy.jpg"
+            id="weatherIcon5"
+            style="width: 150px; height: 150px"
+            class="weatherIcon"
+          />
+          <span class="temp-data">
+            <span id="data5"></span>92<span>°F</span>
+          </span>
+        </div>
+      </report>
+    </main>
+    <footer></footer>
+  </body>
+</html>
